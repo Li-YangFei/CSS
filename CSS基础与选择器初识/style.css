@@ -1,0 +1,29 @@
+[href="#"] {
+  color: white;
+  text-decoration: none;
+  background-color: greenyellow;
+}
+
+/* [class] {
+  list-style: none;
+} */
+
+/* 以下是并集选择器 */
+ul[class] {
+  list-style: none;
+  background-color: skyblue;
+}
+
+/* ~VS* */
+div[class~="one"] {
+  text-decoration: line-through;
+}
+
+/* 会被实现 */
+div[class*="ne "] {
+  color: blue;
+}
+/* 不会被实现 */
+/* div[class~="ne "] {
+  color: red;
+} */
